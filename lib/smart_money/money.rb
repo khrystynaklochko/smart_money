@@ -17,12 +17,10 @@ class Money
       if !currency.nil? && !rates.nil?
         @conversion_rates_table = {} if @conversion_rates_table.nil?
         rates.each do |curr,value|
-          if @conversion_rates_table[ [currency.upcase, curr.upcase] ].nil?
-            @conversion_rates_table[ [currency.upcase, curr.upcase] ] = value
-            @conversion_rates_table[ [curr.upcase, currency.upcase] ] = (1/value.to_f).round(2)
-            @conversion_rates_table[ [curr.upcase, curr.upcase] ] = 1
-            @conversion_rates_table[ [currency.upcase, currency.upcase] ] = 1
-          end
+          @conversion_rates_table[ [currency.upcase, curr.upcase] ] = value
+          @conversion_rates_table[ [curr.upcase, currency.upcase] ] = (1/value.to_f).round(2)
+          @conversion_rates_table[ [curr.upcase, curr.upcase] ] = 1
+          @conversion_rates_table[ [currency.upcase, currency.upcase] ] = 1
         end
       else
         raise ArgumentError, "currency or rates attributes can't be be blank"
