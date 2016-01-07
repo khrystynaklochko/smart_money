@@ -1,4 +1,6 @@
 [![Build Status](https://travis-ci.org/khrystynaklochko/smart_money.svg)](https://travis-ci.org/khrystynaklochko/smart_money)
+[![Coverage Status](https://coveralls.io/repos/khrystynaklochko/smart_money/badge.svg?branch=master&service=github)](https://coveralls.io/github/khrystynaklochko/smart_money?branch=master)
+[![Gem Version](https://badge.fury.io/rb/smart_money.svg)](https://badge.fury.io/rb/smart_money)
 # SmartMoney
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/smart_money`. To experiment with that code, run `bin/console` for an interactive prompt.
