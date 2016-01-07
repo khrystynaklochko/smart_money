@@ -1,5 +1,3 @@
 require "smart_money/version"
-
-module SmartMoney
-  # Your code goes here...
-end
+require "smart_money/money"
+require "smart_money/operations"
